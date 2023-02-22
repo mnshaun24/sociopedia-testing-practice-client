@@ -114,7 +114,9 @@ const NavBar = () => {
       ) : (
         <IconButton
           onClick={() => setIsMobileMenuToggled(!isMobileMenuToggled)}
-        ></IconButton>
+        >
+          <Menu />
+        </IconButton>
       )}
       {/*MOBILE NAVIGATION STYLE  */}
       {!isNonMobileScreens && isMobileMenuToggled && (
@@ -182,7 +184,7 @@ const NavBar = () => {
                   Log Out
                 </MenuItem>
               </Select>
-            </FormControl>{" "}
+            </FormControl>
           </FlexBetween>
         </Box>
       )}
